@@ -1,0 +1,43 @@
+#include "stdio.h"
+#include "iostream"
+#include "string"
+
+using namespace std;
+
+int main(){
+	string num;
+	int numQuery, x, y, temp, counter;
+	char c;
+	bool isNo;
+
+	counter = 1;
+	while (getline(cin, num)){
+		scanf("%d", &numQuery);
+		printf("Case %d:\n", counter);
+		for (int i = 0; i < numQuery; i++){
+			scanf("%d", &x);
+			scanf("%d", &y);
+			if (x>y){
+				temp = x;
+				x = y;
+				y = temp;
+			}
+			c = num.at(x);
+			isNo = false;
+			for (int j = x+1; j <= y; j++){
+				if (c != num.at(j)){
+					printf("No\n");
+					isNo = true;
+					break;
+				}
+			}
+
+			if (!isNo){
+				printf("Yes\n");
+			}
+		}
+		counter++;
+	}
+
+	return 0;
+}
