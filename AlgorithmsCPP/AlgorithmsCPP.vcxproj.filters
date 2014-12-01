@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PatternSearch.cpp">
+    <ClCompile Include="UVA119cpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
