@@ -10,6 +10,9 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UVA10098.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{759C1922-4F59-4AF4-ACF8-7452495C0C39}</ProjectGuid>
     <RootNamespace>AlgorithmsCPP</RootNamespace>
